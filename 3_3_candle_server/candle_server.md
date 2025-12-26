@@ -81,3 +81,24 @@ pip install "fastapi[standard]"
 ```
 fastapi dev candle.py --host 0.0.0.0 --port 80
 ```
+
+## Flag
+```
+INFO:candle:Querying candle data for: code=TEQA, year=2021, month=12, day=27, hour=11
+INFO:candle:Query key: ('TEQA', 2021, 12, 27, 11)
+INFO:candle:Key exists in candle_data: True
+INFO:candle:Total keys in candle_data: 218
+      INFO   172.64.215.203:9343 - "GET /candle?code=TEQA&year=2021&month=12&day=27&hour=11 HTTP/1.1" 200
+INFO:candle:Querying candle data for: code=FTHD, year=2021, month=12, day=23, hour=10
+INFO:candle:Query key: ('FTHD', 2021, 12, 23, 10)
+INFO:candle:Key exists in candle_data: True
+INFO:candle:Total keys in candle_data: 218
+      INFO   172.64.215.203:9343 - "GET /candle?code=FTHD&year=2021&month=12&day=23&hour=10 HTTP/1.1" 200
+INFO:candle:Querying candle data for: code=KZNE, year=2021, month=12, day=23, hour=10
+INFO:candle:Query key: ('KZNE', 2021, 12, 23, 10)
+INFO:candle:Key exists in candle_data: True
+INFO:candle:Total keys in candle_data: 218
+      INFO   172.64.215.203:9343 - "GET /candle?code=KZNE&year=2021&month=12&day=23&hour=10 HTTP/1.1" 200
+INFO:candle:Flag request received: f1nat3xthd{02f401fd-140e-4fe5-a7f5-29ff996139fc}
+      INFO   172.64.215.203:9343 - "PUT /flag HTTP/1.1" 200
+```

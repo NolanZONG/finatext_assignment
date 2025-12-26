@@ -43,3 +43,13 @@
     * flag: `string`
 
 このリクエストから、flagの値を取得してください。
+
+## Run
+```
+sudo fastapi dev api.py --host 0.0.0.0 --port 80
+```
+
+## Flag
+```
+INFO:api:Flag request received: f1nat3xthd{f1096ca4-f298-464f-97e0-feedbe237f78}
+```
