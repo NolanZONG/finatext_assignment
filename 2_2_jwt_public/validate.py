@@ -3,6 +3,8 @@ import json
 import jwt
 from cryptography.hazmat.primitives import serialization
 
+# pip install cryptography pyjwt
+
 SSH_RSA_PUB = r"""ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eLDuYM4TKIKRvc5MSCPGiMSi7PYmbPMAkX6QbNc3PZtlvDjIL9ZYVsrVgw7FIvzpwzouqTV6K401AcRh7j24AXxNaH3OeC4uyx8u1u0mfxUB6DB6FjfjZsD46uqQvj6/GwZGLPkZ8Gyduqbi776Pb9LuBEyZo6wIGjQsHbELJmou4e2SeBEU6yF6MiFQ+DGK2xl6vikjslYzwXSCj7pD2hoVAc5nS5wjU5cf6rerDBcYmvjkN7qvBM+JkSUoWRjLbbyqoJJIHRQHQZay6HFOc88wCY+KHwnPg7+QWTNMpQgFDBQ0Rran1Mm/LH6HK7f0mT8Dl99zCBI/6BMKyVA5"""
 
 # 读取 OpenSSH 公钥（ssh-rsa ...）成 cryptography 公钥对象
