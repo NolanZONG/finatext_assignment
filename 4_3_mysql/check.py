@@ -1,6 +1,7 @@
 from scapy.all import rdpcap, Raw
 from scapy.layers.inet import TCP
 
+# pip install scapy
 pkts = rdpcap("mysql.pcap")
 
 for p in pkts:
