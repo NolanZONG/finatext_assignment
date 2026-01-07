@@ -3,6 +3,8 @@ import json
 import jwt
 from cryptography.hazmat.primitives import serialization
 
+# pip install cryptography pyjwt
+
 RSA_JWT_ALGS = ["RS256", "RS384", "RS512", "PS256", "PS384", "PS512"]
 
 RSA_PRIVATE_KEY = b"""-----BEGIN RSA PRIVATE KEY-----
